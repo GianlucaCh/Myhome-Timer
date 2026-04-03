@@ -1,0 +1,78 @@
+turn_on_timed:
+  name: "Accendi luce con timer MyHome"
+  description: >
+    Accende una luce MyHome (SCS/BTicino) con un timer nativo integrato nel bus.
+    Preleva automaticamente A e PL dagli attributi dell'entità e invia
+    il frame OpenWebNet corretto tramite myhome.send_message.
+  fields:
+    entity_id:
+      name: "Entità luce MyHome"
+      description: "Seleziona la luce myhome da accendere con timer."
+      required: true
+      selector:
+        entity:
+          domain: light
+          integration: myhome
+
+    timer_mode:
+      name: "Durata timer"
+      description: >
+        Seleziona la durata del timer. Le prime 8 opzioni usano i WHAT nativi
+        OWN (Par. 3.1 del doc WHO=1). Scegli 'custom' per impostare ore/min/sec
+        arbitrari (Dimension=2, par.3.4.2).
+      required: true
+      default: "15min"
+      selector:
+        select:
+          options:
+            - value: "0.5sec"
+              label: "0.5 secondi (WHAT=18)"
+            - value: "30sec"
+              label: "30 secondi (WHAT=17)"
+            - value: "1min"
+              label: "1 minuto (WHAT=11)"
+            - value: "2min"
+              label: "2 minuti (WHAT=12)"
+            - value: "3min"
+              label: "3 minuti (WHAT=13)"
+            - value: "4min"
+              label: "4 minuti (WHAT=14)"
+            - value: "5min"
+              label: "5 minuti (WHAT=15)"
+            - value: "15min"
+              label: "15 minuti (WHAT=16)"
+            - value: "custom"
+              label: "Personalizzata — usa i campi ore/min/sec sotto"
+
+    hours:
+      name: "Ore (solo modalità custom)"
+      description: "Ore di accensione [0-255]. Usato solo se timer_mode = custom."
+      required: false
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 255
+          mode: box
+
+    minutes:
+      name: "Minuti (solo modalità custom)"
+      description: "Minuti di accensione [0-59]. Usato solo se timer_mode = custom."
+      required: false
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 59
+          mode: box
+
+    seconds:
+      name: "Secondi (solo modalità custom)"
+      description: "Secondi di accensione [0-59]. Usato solo se timer_mode = custom."
+      required: false
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 59
+          mode: box
