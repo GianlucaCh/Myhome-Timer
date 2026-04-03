@@ -4,6 +4,9 @@ Integrazione che espone il servizio `myhome_timer.turn_on_timed` per
 inviare comandi timer nativi SCS/BTicino sul bus OpenWebNet, tramite
 `myhome.send_message` (componente anotherjulien/MyHOME v0.8.6+).
 
+NOTA IMPORTANTE: dovete aver installato il custom_component myhome di anotherjulien. Grazie Anotherjulien!
+
+
 ---
 
 ## Struttura file
