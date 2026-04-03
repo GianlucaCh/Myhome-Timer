@@ -15,9 +15,6 @@ config/
 │       ├── __init__.py
 │       ├── manifest.json
 │       └── services.yamL
-└── blueprints/
-    └── automation/
-        └── myhome_timer_blueprint.yaml
 ```
 
 ---
@@ -88,6 +85,8 @@ Frame inviato: `*#1*<WHERE>*#2*0*20*0##`
 ## Blueprint (Approccio 2)
 
 ### Installazione blueprint
+
+Cerca la repo "blueprint trigger timer myhome"
 
 Copia `myhome_timer_blueprint.yaml` in:
 ```
