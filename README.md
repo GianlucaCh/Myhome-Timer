@@ -56,7 +56,7 @@ Dovresti vedere il servizio con tutti i campi descritti.
 
 ---
 
-## Utilizzo del servizio (Approccio 2)
+## Utilizzo del servizio (Approccio 1)
 
 ### Esempio da UI Strumenti sviluppatore:
 
@@ -85,7 +85,7 @@ Frame inviato: `*#1*<WHERE>*#2*0*20*0##`
 
 ---
 
-## Blueprint (Approccio 1)
+## Blueprint (Approccio 2)
 
 ### Installazione blueprint
 
@@ -97,8 +97,7 @@ Copia `myhome_timer_blueprint.yaml` in:
 Poi in HA: **Impostazioni → Automazioni → Blueprint → Importa**.
 
 
-L'automazione sostituisce il blocco `myhome.send_message` manuale che
-vedi nello screenshot con un'interfaccia guidata.
+L'automazione sostituisce il blocco `myhome.send_message` manuale con un'interfaccia guidata.
 
 ---
 
@@ -117,7 +116,8 @@ Per vedere gli attributi della tua entità:
 
 ---
 
-## Tabella WHAT timer OWN (WHO=1, §3.1)
+## Tabella WHAT timer OWN (WHO=1, §
+par3.1 who=1)
 
 | timer_mode | WHAT | Frame inviato         | Durata    |
 |------------|------|-----------------------|-----------|
