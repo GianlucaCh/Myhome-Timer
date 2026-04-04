@@ -122,7 +122,7 @@ Per vedere gli attributi della tua entità:
 
 ---
 
-## Tabella WHAT timer OWN (WHO=1, §
+## Tabella WHAT timer OWN (WHO=1,
 par3.1 who=1)
 
 | timer_mode | WHAT | Frame inviato         | Durata    |
