@@ -89,7 +89,8 @@ Frame inviato: `*#1*<WHERE>*#2*0*20*0##`
 
 ### Installazione blueprint
 
-Cerca la repo "blueprint trigger timer myhome"
+nota: il blueprint è nato come 
+"trigger" -> on temporizzato. quindi utilizzatelo se avete degli on_temp da fare a valle di un cambio di stato in "on".
 https://community.home-assistant.io/t/myhome-native-timer/1001479
 Copia `myhome_timer_blueprint.yaml` in:
 ```
