@@ -90,7 +90,7 @@ Frame inviato: `*#1*<WHERE>*#2*0*20*0##`
 ### Installazione blueprint
 
 Cerca la repo "blueprint trigger timer myhome"
-
+https://community.home-assistant.io/t/myhome-native-timer/1001479
 Copia `myhome_timer_blueprint.yaml` in:
 ```
 /config/blueprints/automation/myhome_timer_blueprint.yaml
