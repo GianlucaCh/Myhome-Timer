@@ -159,6 +159,6 @@ I log mostrano il frame OWN esatto inviato ad ogni chiamata.
 ## Compatibilità
 
 - Home Assistant OS / Supervised
-- MyHOME integration by anotherjulien, versione 0.8.6+
+- MyHOME integration by anotherjulien 0.8.6+
 - Gateway BTicino Testati: MHS1
 - 
