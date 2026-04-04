@@ -59,7 +59,7 @@ Dovresti vedere il servizio con tutti i campi descritti.
 ---
 
 ## Utilizzo del servizio (Approccio 1)
-Quando comporrete le vostre automazioni potete richiamare il servizio in caso vogliato demandare il timer_on al Myhome.
+Quando comporrete le vostre automazioni potete richiamare il servizio in caso vogliate demandare la temporizzazione al Myhome.
 
 ### Esempio da UI Strumenti sviluppatore:
 
