@@ -1,5 +1,7 @@
 # MyHome Timer — Custom Component per Home Assistant
 
+--- CODICE GENERATO AL 90% CON AI ---
+
 Integrazione che espone il servizio `myhome_timer.turn_on_timed` per
 inviare comandi timer nativi SCS/BTicino sul bus OpenWebNet, tramite
 `myhome.send_message` (componente anotherjulien/MyHOME v0.8.6+).
